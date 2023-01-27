@@ -8,18 +8,18 @@ const assertEqual = function(actual, expected) {
   }
 };
 const tail = function(array) {
-  if (array.length < 1) {
-    return [];
-  }
+  // if (array.length < 1) {
+  //   return [];
+  // }
   // console.log(array.slice(1));
   return array.slice(1);
 };
 let words = ["Yo Yo", "Lighthouse", "Labs"];
-// console.log(tail([1,2,3,4,5,6]));
+
 words = tail(words);
 assertEqual(words.length, 3);
 
 let numbers = [1,2,3,4,5];
-// console.log(tail([1,2,3,4,5,6]));
+
 numbers = tail(numbers);
 assertEqual(numbers.length, 4);
