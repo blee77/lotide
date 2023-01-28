@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed :  ${actual}   ===  ${expected} ,This is true!`);
   } else  {
@@ -17,4 +17,4 @@ const eqArrays = function(array1, array2) {
 };
 
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
