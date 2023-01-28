@@ -33,8 +33,8 @@ const without = function(itemsToRemove, source) {
   
 };
 
-let test1 = without([1, 2, 3], [1]) // => [2, 3]
-let test2 = without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
+let test1 = without([1, 2, 3], [1]); // => [2, 3]
+let test2 = without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
 
 // const words = ["hello", "world", "lighthouse"];
 // without(words, ["lighthouse"]); // no need to capture return value for this test case
