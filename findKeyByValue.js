@@ -30,3 +30,12 @@ const bestTVShowsByGenre = {
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+
+const bestCars = {
+  Japan: "Honda",
+  America: "Ford",
+  France:  "Fiat"
+};
+
+assertEqual(findKeyByValue(bestCars, "Honda"), "Japan");
+assertEqual(findKeyByValue(bestCars, "Ford"), "America");
