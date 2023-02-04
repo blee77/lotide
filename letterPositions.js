@@ -47,7 +47,7 @@ const letterPositions = function(sentence) {
       // console.log(result);
     } else  {
       result[objectKey] = [i];
-    } 
+    }
   }
   return result;
 };
