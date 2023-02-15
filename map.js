@@ -17,11 +17,7 @@ const eqArrays = function(array1, array2) {
 };
 const map = function(array, callback) {
   const results = [];
-  // for (let item of array) {
-  //   console.log('item BEFORE: ', item);
-  //   console.log('item AFTER: ', callback(item));
-  //   console.log('---');
-  // }
+  
 
   for (let item of array) {
     results.push(callback(item));

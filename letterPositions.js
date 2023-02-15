@@ -18,33 +18,19 @@ const eqArrays = function(array1, array2) {
 };
 
 
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-// This challenge is similar to the countLetters activity and
-//  allows us to spend some more time solving problems with objects.
-
-// We'll implement a new function letterPositions
-//  which will return all the indices (zero-based positions) 
-//  in the string where each character is found.
-
-// For each letter, instead of returning just one number 
-// to represent its number of occurrences,
-
-//multiple numbers may be 
-// needed to represent all the places in the string that it shows up.
-
+assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 
 
 const letterPositions = function(sentence) {
 
   const result = {};
-  // logic to update results here
+ 
 
   for (let i = 0; i < sentence.length; i++) {
 
-    const objectKey = sentence[i];  //h
+    const objectKey = sentence[i];
     if (result[objectKey]) {
       result[objectKey].push(i);
-      // console.log(result);
     } else  {
       result[objectKey] = [i];
     }
@@ -52,14 +38,11 @@ const letterPositions = function(sentence) {
   return result;
 };
 
-// const result = {
-//   'l': [1,2,3,4,5]
-// }
 
 
 
 console.log(letterPositions("lighthouse in the house"));
 
-// Test
+
 assertArraysEqual(letterPositions("hello").e, [1]);
 console.log(letterPositions("hello"));

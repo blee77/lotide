@@ -5,42 +5,6 @@ const assertEqual = function(actual, expected) {
     console.log(` 🛑🛑🛑 Assertion Failed : ${actual}  !==  ${expected}`);
   }
 };
-////////
-  // let arr = ["a", "b", "c", "d", "a", "a", "b"];
-  // let obj = {a: true, b: true, d: false};
-  // function (arr, obj){
-  //   let result = [];
-
-
-  // }
-  // result ={
-  //   "a": 3,
-  //   "b": 2
-  // }
-////
-
-  // allItems: an array of strings that we need to look through
-// itemsToCount: an object specifying what to count
-// const countOnly = function(allItems, itemsToCount) {
-//   const results = {};
-
-
-//   c
-
-//   for (const item of allItems) {
-
-//     if (itemsToCount[item]) {
-//       if (results[item] === true) {
-//         results[item] += 1;
-//       } else {
-//         results[item] = 1;
-//       };
-//     };
-//     return results;
-//   }
-// };
-
-
 
 
 const firstNames = [
