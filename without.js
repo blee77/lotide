@@ -1,6 +1,4 @@
 
-
-
 const without = function(itemsToRemove, source) {
   let result = [];
   
@@ -8,12 +6,9 @@ const without = function(itemsToRemove, source) {
     const found = source.find((item) => item === element);
     if (!found) {
       result.push(element);
-
     }
-
   }
   return result;
-  
 };
 
 module.exports = without;

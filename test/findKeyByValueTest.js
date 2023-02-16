@@ -16,6 +16,37 @@ describe("#findKeyByValue", () => {
 
     assert.deepEqual(findKeyByValue(result1, expected));
   });
+
+  it("returns true if found key and value match", () => {
+
+    const bestCars = {
+      Japan: "Honda",
+      America: "Ford",
+      France:  "Fiat"
+    };
+
+    const result1 = assertEqual(findKeyByValue(bestCars, "Honda"));
+    const expected = "Japan";
+
+    assert.deepEqual(findKeyByValue(result1, expected));
+
+  });
+
+  it("returns true if found key and value match", () => {
+
+    const bestCars = {
+      Japan: "Honda",
+      America: "Ford",
+      France:  "Fiat"
+    };
+
+    const result1 = assertEqual(findKeyByValue(bestCars, "Ford"));
+    const expected = "America";
+
+    assert.deepEqual(findKeyByValue(result1, expected));
+    
+  });
+ 
  
 });
 
@@ -31,11 +62,6 @@ describe("#findKeyByValue", () => {
 // assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 // assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 
-// const bestCars = {
-//   Japan: "Honda",
-//   America: "Ford",
-//   France:  "Fiat"
-// };
 
-// assertEqual(findKeyByValue(bestCars, "Honda"), "Japan");
-// assertEqual(findKeyByValue(bestCars, "Ford"), "America");
+
+
