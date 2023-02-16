@@ -3,7 +3,6 @@ const assertArraysEqual = require("../assertArraysEqual");
 const assert = require('chai').assert;
 
 
-
 describe("#middle", () => {
   it("returns [] for an array with 1 element", () => {
     assert.deepEqual(middle([1]), []);

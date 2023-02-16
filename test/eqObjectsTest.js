@@ -1,0 +1,34 @@
+const eqObjects = require("../eqObjects");
+const assertArraysEqual = require("../assertArraysEqual");
+const eqArrays = require("../eqArrays");
+const assert = require('chai').assert;
+
+describe("#eqObjects", () => {
+  it("returns true if objects are equal", () => {
+    const multiColorShirtObject = { colors:["red", "blue"] , size: "medium" };
+    const anotherMultiColorShirtObject = { size: "medium" , colors:["red", "blue"] };
+    const expected = true;
+    assert.strictEqual((multiColorShirtObject,anotherMultiColorShirtObject), expected);
+  });
+ 
+});
+
+describe("#eqObjects", () => {
+  it("returns true if objects are equal", () => {
+    const multiColorShirtObject = { colors:["red", "blue"] , size: "medium" };
+    const longSleeveMultiColorShirtObject = { size: "medium" , colors:["red", "blue"], sleeveLength: "long" };
+    const expected = true;
+    assert.deepEqual(eqObjects((multiColorShirtObject,longSleeveMultiColorShirtObject), expected));
+  });
+ 
+});
+
+// const multiColorShirtObject = { colors:["red", "blue"] , size: "medium" };
+// const anotherMultiColorShirtObject = { size: "medium" , colors:["red", "blue"] };
+
+// eqArrays(assertEqual(eqObjects(multiColorShirtObject,anotherMultiColorShirtObject), true)); // => true
+
+// const longSleeveMultiColorShirtObject = { size: "medium" , colors:["red", "blue"], sleeveLength: "long" };
+
+// eqArrays(assertEqual(eqObjects(multiColorShirtObject,longSleeveMultiColorShirtObject),false)); // => false
+

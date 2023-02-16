@@ -1,22 +1,3 @@
-const eqArrays = function(array1, array2) {
-  for (let i = 0; i < array1; i++) {
-
-    if (Array.isArray) {
-      return true;
-    } else if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
-};
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed :  ${actual}   ===  ${expected}`);
-  } else  {
-    console.log(` 🛑🛑🛑 Assertion Failed : ${actual}  !==  ${expected}`);
-  }
-};
-
 
 const eqObjects = function(object1, object2) {
 
@@ -33,11 +14,4 @@ const eqObjects = function(object1, object2) {
   }
 };
 
-const multiColorShirtObject = { colors:["red", "blue"] , size: "medium" };
-const anotherMultiColorShirtObject = { size: "medium" , colors:["red", "blue"] };
-
-eqArrays(assertEqual(eqObjects(multiColorShirtObject,anotherMultiColorShirtObject), true)); // => true
-
-const longSleeveMultiColorShirtObject = { size: "medium" , colors:["red", "blue"], sleeveLength: "long" };
-
-eqArrays(assertEqual(eqObjects(multiColorShirtObject,longSleeveMultiColorShirtObject),false)); // => false
+module.exports = eqObjects;
