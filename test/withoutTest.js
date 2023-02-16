@@ -13,12 +13,3 @@ describe("#without", () => {
  
 });
 
-
-// let test1 = without([1, 2, 3], [1]);
-// let test2 = without(["1", "2", "3"], [1, 2, "3"]);
-
-
-// assertArraysEqual(test1, [2,4]);
-
-// assertArraysEqual(test2, [2,4]);
-

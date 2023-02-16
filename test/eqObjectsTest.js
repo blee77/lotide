@@ -8,17 +8,14 @@ describe("#eqObjects", () => {
     const multiColorShirtObject = { colors:["red", "blue"] , size: "medium" };
     const anotherMultiColorShirtObject = { size: "medium" , colors:["red", "blue"] };
     const expected = true;
-    assert.strictEqual((multiColorShirtObject,anotherMultiColorShirtObject), expected);
+    assert.strictEqual(eqObjects(multiColorShirtObject,anotherMultiColorShirtObject), expected);
   });
  
-});
-
-describe("#eqObjects", () => {
   it("returns true if objects are equal", () => {
     const multiColorShirtObject = { colors:["red", "blue"] , size: "medium" };
     const longSleeveMultiColorShirtObject = { size: "medium" , colors:["red", "blue"], sleeveLength: "long" };
-    const expected = true;
-    assert.deepEqual(eqObjects((multiColorShirtObject,longSleeveMultiColorShirtObject), expected));
+    const expected = false;
+    assert.strictEqual(eqObjects(multiColorShirtObject,longSleeveMultiColorShirtObject), expected);
   });
  
 });
