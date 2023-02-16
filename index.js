@@ -16,12 +16,6 @@ const assertObjectsEqual = require('./assertObjectsEqual');
 const assertEqual = require('./assertEqual');
 const assertArraysEqual = require('./assertArraysEqual');
 
-// let name = 'John Doe'
-// let email = 'john.doe@example.com'
-// let age = 25
-
-// let user = { name, email, age }
-
 
 module.exports = {
   head,
